@@ -4,6 +4,7 @@ Podremos encontrar:
     -Las últimas películas.
     -Un buscador de películas.
     -Diseño atractivo.
+    -Para el filtro por clasificación tuve inconvenientes no pudiendolo resolver sinceramente. 
 
 
 Instalación
