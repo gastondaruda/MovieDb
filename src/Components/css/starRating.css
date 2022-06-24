@@ -1,0 +1,13 @@
+input[type="radio"] {
+    display: none;
+}
+.star{
+    cursor: pointer;
+    font-size: 3rem;
+}
+.colorStarOff{
+    color: #e4e5e9;
+}
+.colorStarOn{
+    color: #ffc107;
+}
