@@ -1,0 +1,23 @@
+.loaderComponent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+/*
+.loading_img{
+    border-radius: 50%;
+    margin-top: 3rem;
+    width: 18rem;
+    animation: loader 3.5s linear infinite;
+}
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+*/

@@ -1,0 +1,51 @@
+.movieCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.movieTitle{
+    flex-wrap: wrap;
+}
+.movieImg{
+    width: 15rem;
+    height: auto;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+.movieImg:hover{
+    /*transform: scale(1.1)*/
+    filter: brightness(40%);
+}
+.movieAverage{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 1rem 2rem 0;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: #fff;
+    padding: .5rem;
+    border: 3px solid #02970a;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    filter: brightness(80%);
+}
+.btn-detail{
+    border-radius: 16px;
+    background-color: #2C3046;
+    padding: .5rem;
+}
+.modal{
+    background: none;
+}
+.img_modal{
+    width: 100%!important;
+    border-radius: 16px;
+}

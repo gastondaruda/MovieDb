@@ -1,0 +1,13 @@
+.moviesContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.btn-movieStart{
+    border: none;
+    border-radius: 16px;
+    padding: .5rem;
+    background-color: #2C3046;
+}
