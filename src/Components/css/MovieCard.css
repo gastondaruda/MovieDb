@@ -4,6 +4,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
 }
 .movieTitle{
     flex-wrap: wrap;
@@ -11,9 +13,11 @@
 .movieImg{
     width: 15rem;
     height: auto;
-    border-radius: 16px;
+    border-radius: 26px;
     cursor: pointer;
     transition: .3s;
+    min-height: 23rem;
+    max-height: 23rem;
 }
 .movieImg:hover{
     /*transform: scale(1.1)*/
@@ -26,16 +30,13 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    margin: 0 1rem 2rem 0;
     border-radius: 50%;
     font-size: 1rem;
-    color: #fff;
     padding: .5rem;
     border: 3px solid #02970a;
     background-color: #fff;
     color: #000;
     font-weight: bold;
-    filter: brightness(80%);
 }
 .btn-detail{
     border-radius: 16px;
@@ -48,4 +49,21 @@
 .img_modal{
     width: 100%!important;
     border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+    .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+        flex-wrap: wrap;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: .69rem;
+      }
+        .movieImg{
+            width: 6rem;
+            min-height: 1rem!important;
+        }
+    .movieAverage{
+        padding: .2rem;
+        font-size: .7rem
+    }
 }

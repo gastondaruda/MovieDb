@@ -4,7 +4,7 @@ import "../css/loading.css"
 
 function Loading(){
     return(
-        <div className="loaderComponent">
+        <div className="loaderComponent bg-color">
             <Spinner className="d-flex justify-content-center align-items-center" animation="border" variant="warning">
                 <span className="visually-hidden">Loading...</span>
             </Spinner>

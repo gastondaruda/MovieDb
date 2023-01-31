@@ -1,25 +1,33 @@
-import {BrowserRouter , Routes, Route } from "react-router-dom";
-import Title from "./Components/Title";
+import {BrowserRouter , Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import Movies from "./Components/Movies";
 import Search from "./Components/Search";
-import MovieFilteredContainer from "./Components/MovieFilteredContainer";
 import NavbarComponent from "./Components/Navbar/Navbar";
-import './App.css';
 import { TvSeries } from "./Components/Tv/TvSeries";
+import ItemDetails from "./Components/ItemDetail/ItemDetail";
+import GenresMovie from "./Components/Genres/GenresMovie";
+import Actor from "./Components/ActorComponent/ActorMovie";
+import SerieDetails from "./Components/SerieDetail/SerieDetails";
+import SerieSeasonNumber from "./Components/SerieDetail/SerieSeasonNumber";
+import './App.css';
 
 function App() {
   return (
       <>
           <div className="App">
-            <BrowserRouter>
+            <HashRouter>
                 <NavbarComponent />
                   <Routes>
-                    <Route path="/MovieDb" element={<Movies />} />
+                    <Route path="/" element={<Movies />} />
+                    {/*<Route path="/GenreMovie/:genre" element={<GenresMovie />} />*/}
                     <Route path="/searchMovie" element={<Search />} />
-                    <Route path="/MovieFilteredContainer" element={<MovieFilteredContainer />} />
+                    <Route path="/actor/:idActor" element={<Actor />} />
+                    <Route path="/details/:id" element={<ItemDetails />} />
                     <Route path="/TvSeries" element={<TvSeries />} />
+                    <Route path="/TvDetails/:id" element={<SerieDetails />} />
+                    <Route path="/TvDetails/:tv_id/:season_number" element={<SerieSeasonNumber />} />
+                    <Route path="/*" element={<Navigate to="/" />} />
                   </Routes>
-            </BrowserRouter>
+            </HashRouter>
           </div>
       </>
   );

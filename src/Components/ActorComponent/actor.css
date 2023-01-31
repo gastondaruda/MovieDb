@@ -1,0 +1,12 @@
+.actor_info_profile{
+    width: 17rem;
+    border-radius: 16px;
+    margin: auto;
+}
+
+
+@media (max-width: 992px){
+    .actor-biography{
+        max-height: 15rem;
+    }
+}

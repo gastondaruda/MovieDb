@@ -1,65 +1,38 @@
-import React,{useState} from "react"
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import React from "react"
+import {Container, Nav, Navbar, Offcanvas} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 function NavbarComponent() {
     return (
         <>
         {['xl'].map((expand) => (
-            <Navbar key={expand} bg="dark" expand={expand} className="mb-3">
-            <Container fluid>
-                <Navbar.Brand href="#">Navbar - Cuevana</Navbar.Brand>
-                <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-                <Navbar.Offcanvas
-                id={`offcanvasNavbar-expand-${expand}`}
-                aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-                placement="end"
-                >
-                <Offcanvas.Header closeButton>
-                    <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    Offcanvas
-                    </Offcanvas.Title>
-                </Offcanvas.Header>
-                <Offcanvas.Body>
-                    <Nav className="justify-content-end flex-grow-1 pe-3">
-                        <Nav.Link href="#action1">
-                            <NavLink to="/">Películas</NavLink>
-                        </Nav.Link>
-                        <Nav.Link href="#action2">
-                            <NavLink to="/TvSeries">Series</NavLink>
-                        </Nav.Link>
-                        {/*<NavDropdown
-                            title="Dropdown"
-                            id={`offcanvasNavbarDropdown-expand-${expand}`}
-                        >
-                            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action4">
-                            Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action5">
-                            Something else here
-                            </NavDropdown.Item>
-                        </NavDropdown>*/}
-                    </Nav>
-                    <Form className="d-flex">
-                    <Form.Control
-                        type="search"
-                        placeholder="Search"
-                        className="me-2"
-                        aria-label="Search"
-                    />
-                    <Button variant="outline-success">Search</Button>
-                    </Form>
-                </Offcanvas.Body>
-                </Navbar.Offcanvas>
-            </Container>
+            <Navbar collapseOnSelect key={expand} bg="" expand={expand} className="pb-2 bg-color">
+                <Container fluid>
+                    <Navbar.Brand href="" className="text-white font-weight-bold">React js - Cuevana</Navbar.Brand>
+                    <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+                    <Navbar.Offcanvas
+                    id={`offcanvasNavbar-expand-${expand}`}
+                    aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+                    placement="end"
+                    
+                    >
+                    <Offcanvas.Header closeButton className="bg-color">
+                        <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className="text-warning font-weight-bold">
+                        Gastón Da Ruda - FrontEnd Developer Jr.
+                        </Offcanvas.Title>
+                    </Offcanvas.Header>
+                    <Offcanvas.Body className="bg-color">
+                        <Nav className="justify-content-end flex-grow-1 pe-3 text-uppercase ">
+                            <Nav.Link href="#/">
+                                <NavLink to="/MovieDb" className="text-white">Películas</NavLink>
+                            </Nav.Link>
+                            <Nav.Link href="#/">
+                                <NavLink to="/TvSeries" className="text-white">Series</NavLink>
+                            </Nav.Link>
+                        </Nav>
+                    </Offcanvas.Body>
+                    </Navbar.Offcanvas>
+                </Container>
             </Navbar>
         ))}
         </>

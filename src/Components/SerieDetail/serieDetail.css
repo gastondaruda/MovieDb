@@ -1,0 +1,46 @@
+.accordionContainer{
+    backdrop-filter: 10px;
+}
+.filter{
+    filter: brightness(50%);
+    background-size: cover;
+    width: 100%
+}
+.img_tv-detail{
+    width: 26rem;
+    border-radius: 56px!important;
+}
+.accordion_image{
+    width: 8rem;
+    border-radius: 26px;
+}
+.align-items-inherit{
+    align-items: inherit!important;
+}
+.seasonContainer{
+    padding-right: 4rem;
+}
+.card_season_img{
+    max-width: 20rem;
+    height:13rem;
+    max-height: 13rem;
+}
+.modal{
+    height: 50vh!important;
+}
+.border-test{
+    border: 2px solid red;
+}
+.margin-auto{
+    margin: auto;
+}
+
+@media (max-width: 992px){
+
+    .modal-lg, .modal-xl {
+        max-width: 80%;
+    }
+    .reviews-card{
+        max-height: 15rem;
+    }
+}

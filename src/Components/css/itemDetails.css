@@ -1,0 +1,41 @@
+.img_detail{
+    border-radius: 36px!important;
+    width: 30rem;
+}
+.filter-drop{
+    filter: drop-shadow(8px 8px 4px #000);
+}
+.padd{
+    padding-left:3rem;
+}
+.padding-right{
+    padding-right: 3rem;
+}
+.justwatch_logo{
+    width: 3rem;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px){
+    .padd{
+        padding-left: 1rem;
+    }
+    .padding-right{
+        padding-right: 1rem;
+    }
+    .img_detail{
+        width: 16rem;
+    }
+    .profile_container {
+        width: 5rem;
+        max-width: 5rem;
+    }
+    .profile_img {
+        width: 6rem;
+        min-height: 9rem;
+        min-width: 5rem;
+    }
+    .reviews-movie{
+        max-height: 20rem;
+    }
+}

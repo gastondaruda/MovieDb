@@ -1,0 +1,25 @@
+.profile{
+}
+.profile_container{
+    width: 8rem;
+    max-width: 8rem;
+}
+.profile_img{
+    width: 8rem;
+    border-radius: 16px;
+}
+.profile_name{
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px){
+    .profile_container {
+        width: 4rem;
+        max-width: 5rem!important;
+    }
+    .profile_img {
+        width: 5rem;
+        min-height: 7rem;
+        min-width: 5rem;
+    }
+}
